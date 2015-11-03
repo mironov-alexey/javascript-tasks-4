@@ -79,7 +79,7 @@ module.exports.get = function (collection, startPoint, depth) {
             if (!contact) {
                 return null;
             }
-            if (collection[contact].gender === 'Мужской') {
+            if (collection[contact.name].gender === 'Мужской') {
                 return contact;
             }
         }
